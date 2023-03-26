@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+      runtime-versions:
+       python: 3.9
+      commands:
+       - echo doing something
+  build:
+    commands:
+      - echo Do 2
+  post_build:
+    commands:
+      - echo Do 3
+artifacts:
+   files:
+    - '**/*'
